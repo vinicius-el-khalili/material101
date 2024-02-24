@@ -31,15 +31,21 @@ export default function RootLayout({
             </Typography>
           </Link>
 
+          <Link href={"/lessons/stack"}>
+            <Typography variant="h6" gutterBottom>
+              Stack
+            </Typography>
+          </Link>
+
           <Link href={"/lessons/button"}>
             <Typography variant="h6" gutterBottom>
               Button
             </Typography>
           </Link>
 
-          <Link href={"/lessons/stack"}>
+          <Link href={"/lessons/buttongroup"}>
             <Typography variant="h6" gutterBottom>
-              Stack
+              ButtonGroup
             </Typography>
           </Link>
 
