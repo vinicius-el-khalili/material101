@@ -3,7 +3,7 @@ import { Button, ButtonGroup, Stack, Typography } from "@mui/material";
 const Page = () => {
     return (
         <>
-        <Typography variant="h2">ButtonGroup</Typography>
+        <Typography variant="h1">ButtonGroup</Typography>
 
         <Typography variant="h4">variant</Typography>
 

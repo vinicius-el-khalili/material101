@@ -49,6 +49,18 @@ export default function RootLayout({
             </Typography>
           </Link>
 
+          <Link href={"/lessons/togglebutton"}>
+            <Typography variant="h6" gutterBottom>
+              ToggleButton
+            </Typography>
+          </Link>
+
+          <Link href={"/lessons/textfield"}>
+            <Typography variant="h6" gutterBottom>
+              TextField
+            </Typography>
+          </Link>
+
           {children}
         </Container>
 
