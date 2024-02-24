@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { Container, Typography } from "@mui/material";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+
+        <Container>
+          <Typography variant="h1">
+            Material Design 101
+          </Typography>
+          <Link href={"/lessons/typography"}>
+            <Typography>
+              Typography
+            </Typography>
+          </Link>
+          {children}
+        </Container>
+
+      </body>
     </html>
   );
 }
