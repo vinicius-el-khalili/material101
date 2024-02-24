@@ -21,14 +21,28 @@ export default function RootLayout({
       <body className={inter.className}>
 
         <Container>
-          <Typography variant="h1">
+          <Typography variant="h3">
             Material Design 101
           </Typography>
+
           <Link href={"/lessons/typography"}>
-            <Typography>
+            <Typography variant="h6" gutterBottom>
               Typography
             </Typography>
           </Link>
+
+          <Link href={"/lessons/button"}>
+            <Typography variant="h6" gutterBottom>
+              Button
+            </Typography>
+          </Link>
+
+          <Link href={"/lessons/stack"}>
+            <Typography variant="h6" gutterBottom>
+              Stack
+            </Typography>
+          </Link>
+
           {children}
         </Container>
 
