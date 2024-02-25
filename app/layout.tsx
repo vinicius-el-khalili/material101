@@ -79,6 +79,12 @@ export default function RootLayout({
             </Typography>
           </Link>
 
+          <Link href={"/lessons/switch"}>
+            <Typography variant="h6" gutterBottom>
+              Switch
+            </Typography>
+          </Link>
+
           {children}
         </Container>
 
