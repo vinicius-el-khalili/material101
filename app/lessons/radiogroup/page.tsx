@@ -1,5 +1,5 @@
 "use client"
-import { Box, FormControl, FormControlLabel, FormHelperText, FormLabel, Radio, RadioGroup, Stack, Typography } from "@mui/material";
+import { Box, FormControl, FormControlLabel, FormHelperText, FormLabel, Input, Radio, RadioGroup, Stack, Typography } from "@mui/material";
 import { ChangeEvent, useState } from "react";
 
 const Page = () => {
@@ -11,12 +11,11 @@ const Page = () => {
 
     return (
         <>
-        <Typography variant="h1">RadioButton</Typography>
-        <Typography variant="h3">& RadioGroup</Typography>
-        <Typography variant="h4">& FormControl</Typography>
+        <Typography variant="h1">RadioGroup</Typography>
 
         <Box>
-            <FormControl sx={{m:2}}>
+            <Typography variant="h6">Selected value: {value}</Typography>
+            <FormControl>
 
                 <FormLabel
                 id="group-label">

@@ -67,9 +67,15 @@ export default function RootLayout({
             </Typography>
           </Link>
 
-          <Link href={"/lessons/radiobutton"}>
+          <Link href={"/lessons/radiogroup"}>
             <Typography variant="h6" gutterBottom>
-              RadioButton
+              RadioGroup
+            </Typography>
+          </Link>
+
+          <Link href={"/lessons/checkbox"}>
+            <Typography variant="h6" gutterBottom>
+              CheckBox
             </Typography>
           </Link>
 
