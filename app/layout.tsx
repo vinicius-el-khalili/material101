@@ -85,6 +85,12 @@ export default function RootLayout({
             </Typography>
           </Link>
 
+          <Link href={"/lessons/rating"}>
+            <Typography variant="h6" gutterBottom>
+              Rating
+            </Typography>
+          </Link>
+
           {children}
         </Container>
 
