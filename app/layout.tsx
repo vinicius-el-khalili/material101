@@ -61,6 +61,18 @@ export default function RootLayout({
             </Typography>
           </Link>
 
+          <Link href={"/lessons/select"}>
+            <Typography variant="h6" gutterBottom>
+              Select
+            </Typography>
+          </Link>
+
+          <Link href={"/lessons/radiobutton"}>
+            <Typography variant="h6" gutterBottom>
+              RadioButton
+            </Typography>
+          </Link>
+
           {children}
         </Container>
 
