@@ -42,7 +42,9 @@ export default function RootLayout({
                 "AutoComplete",
                 "Box",
                 "Stack",
-                "Grid"
+                "Grid",
+                "Paper",
+                "Card"
               ]
               .map((page,i)=>(
                 
@@ -59,7 +61,9 @@ export default function RootLayout({
             }
           </Stack>
 
-          {children}
+          <Container sx={{marginBottom:"4rem",marginTop:"4rem"}}>
+            {children}
+          </Container>
 
         </Container>
 
