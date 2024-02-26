@@ -25,7 +25,9 @@ const Page = () => {
         </FormGroup>
 
         <FormGroup>
+
             <FormLabel>Multiple Switches</FormLabel>
+
             <FormControlLabel
             label="Switch 1"
             control={
@@ -33,6 +35,7 @@ const Page = () => {
                 checked={multiple.state1}
                 onChange={()=>{setMultiple({...multiple,state1:!multiple.state1})}}/>
             }/>
+
             <FormControlLabel
             label="Switch 2"
             control={
@@ -40,6 +43,7 @@ const Page = () => {
                 checked={multiple.state2}
                 onChange={()=>{setMultiple({...multiple,state2:!multiple.state2})}}/>
             }/>
+
             <FormControlLabel
             label="Switch 3"
             control={
@@ -47,11 +51,13 @@ const Page = () => {
                 checked={multiple.state3}
                 onChange={()=>{setMultiple({...multiple,state3:!multiple.state3})}}/>
             }/>
+            
             <FormHelperText>
                 1:{`${multiple.state1}`},
                 2:{`${multiple.state2}`},
                 3:{`${multiple.state3}`}
             </FormHelperText>
+            
         </FormGroup>
 
         <FormGroup>

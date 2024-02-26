@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { Container, Typography } from "@mui/material";
+import { Button, Container, Stack, Typography } from "@mui/material";
 import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -21,77 +21,46 @@ export default function RootLayout({
       <body className={inter.className}>
 
         <Container>
+
           <Typography variant="h3">
             Material Design 101
           </Typography>
 
-          <Link href={"/lessons/typography"}>
-            <Typography variant="h6" gutterBottom>
-              Typography
-            </Typography>
-          </Link>
+          <Stack direction="row" flexWrap="wrap">
+            {
+              [
+                "Typography",
+                "Button",
+                "ButtonGroup",
+                "ToggleButton",
+                "TextField",
+                "Select",
+                "RadioGroup",
+                "CheckBox",
+                "Switch",
+                "Rating",
+                "AutoComplete",
+                "Box",
+                "Stack",
+                "Grid"
+              ]
+              .map((page,i)=>(
+                
+                <Button 
+                variant="outlined"
+                href={`/lessons/${page.toLowerCase()}`}
+                key={`b${i}`}>
 
-          <Link href={"/lessons/stack"}>
-            <Typography variant="h6" gutterBottom>
-              Stack
-            </Typography>
-          </Link>
+                  {page}
 
-          <Link href={"/lessons/button"}>
-            <Typography variant="h6" gutterBottom>
-              Button
-            </Typography>
-          </Link>
+                </Button>
 
-          <Link href={"/lessons/buttongroup"}>
-            <Typography variant="h6" gutterBottom>
-              ButtonGroup
-            </Typography>
-          </Link>
-
-          <Link href={"/lessons/togglebutton"}>
-            <Typography variant="h6" gutterBottom>
-              ToggleButton
-            </Typography>
-          </Link>
-
-          <Link href={"/lessons/textfield"}>
-            <Typography variant="h6" gutterBottom>
-              TextField
-            </Typography>
-          </Link>
-
-          <Link href={"/lessons/select"}>
-            <Typography variant="h6" gutterBottom>
-              Select
-            </Typography>
-          </Link>
-
-          <Link href={"/lessons/radiogroup"}>
-            <Typography variant="h6" gutterBottom>
-              RadioGroup
-            </Typography>
-          </Link>
-
-          <Link href={"/lessons/checkbox"}>
-            <Typography variant="h6" gutterBottom>
-              CheckBox
-            </Typography>
-          </Link>
-
-          <Link href={"/lessons/switch"}>
-            <Typography variant="h6" gutterBottom>
-              Switch
-            </Typography>
-          </Link>
-
-          <Link href={"/lessons/rating"}>
-            <Typography variant="h6" gutterBottom>
-              Rating
-            </Typography>
-          </Link>
+              ))
+            }
+          </Stack>
 
           {children}
+
         </Container>
 
       </body>

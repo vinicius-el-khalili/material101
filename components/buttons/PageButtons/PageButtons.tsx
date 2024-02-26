@@ -11,7 +11,7 @@ const PageButtons = () => {
             <Button variant="text">Text</Button>
             <Button variant="contained">contained</Button>
             <Button variant="outlined">oulined</Button>
-            <Button variant="outlined" href="/lessons/button">link</Button>
+            <Button variant="outlined" href="/lessons/button">href</Button>
         </Stack>
 
         <Typography variant="h4">color</Typography>
