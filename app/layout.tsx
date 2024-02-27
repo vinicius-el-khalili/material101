@@ -44,7 +44,8 @@ export default function RootLayout({
                 "Stack",
                 "Grid",
                 "Paper",
-                "Card"
+                "Card",
+                "Accordion"
               ]
               .map((page,i)=>(
                 
